@@ -1,5 +1,5 @@
-#LyX 2.3 created this file. For more info see http://www.lyx.org/
-\lyxformat 544
+#LyX 2.4 created this file. For more info see https://www.lyx.org/
+\lyxformat 620
 \begin_document
 \begin_header
 \save_transient_properties true
@@ -86,11 +86,11 @@
 \end_preamble
 \use_default_options false
 \master 1-DesafioTecnologico-0-Master.lyx
-\maintain_unincluded_children false
+\maintain_unincluded_children no
 \language brazilian
 \language_package auto
-\inputencoding auto
-\fontencoding global
+\inputencoding auto-legacy
+\fontencoding auto
 \font_roman "default" "default"
 \font_sans "default" "default"
 \font_typewriter "default" "default"
@@ -98,7 +98,9 @@
 \font_default_family default
 \use_non_tex_fonts false
 \font_sc false
-\font_osf false
+\font_roman_osf false
+\font_sans_osf false
+\font_typewriter_osf false
 \font_sf_scale 100 100
 \font_tt_scale 100 100
 \use_microtype false
@@ -112,7 +114,7 @@
 \paperfontsize 12
 \spacing onehalf
 \use_hyperref false
-\papersize a4paper
+\papersize a4
 \use_geometry true
 \use_package amsmath 1
 \use_package amssymb 1
@@ -133,7 +135,9 @@
 \suppress_date false
 \justification true
 \use_refstyle 0
+\use_formatted_ref 0
 \use_minted 0
+\use_lineno 0
 \index Índice
 \shortcut idx
 \color #008000
@@ -155,11 +159,16 @@
 \papercolumns 1
 \papersides 2
 \paperpagestyle fancy
+\tablestyle default
 \tracking_changes false
 \output_changes false
+\change_bars false
+\postpone_fragile_content false
 \html_math_output 0
 \html_css_as_file 0
 \html_be_strict false
+\docbook_table_output 0
+\docbook_mathml_prefix 1
 \end_header
 
 \begin_body
@@ -180,7 +189,7 @@ lhead{
 \backslash
 thechapter
 \backslash
-space - Desenvolvimento do Projeto de Engenharia - Descrição da Proposta}
+space - Desenvolvimento do Projeto de Engenharia - Descrição da Proposta} 
 \backslash
 pagenumbering{arabic}
 \end_layout
@@ -212,7 +221,7 @@ today}
 status open
 
 \begin_layout Plain Layout
-Substitua "SeuNomeAqui" por seu nome e sobrenome
+Substitua "NomeDoProfessorQueElaborouODesafio" por seu nome e sobrenome
 \end_layout
 
 \end_inset
@@ -233,8 +242,7 @@ today ele vai colocar data no material impresso
 \end_layout
 
 \begin_layout Standard
-Apresenta-se aqui a proposta de desenvolvimento de um projeto de engenharia
- que visa ...
+Apresenta-se aqui a proposta de desenvolvimento de um projeto de engenharia que visa ...
 \begin_inset Note Note
 status open
 
@@ -252,7 +260,8 @@ Título da proposta
 \end_layout
 
 \begin_layout Itemize
-Título: 
+Título:
+ 
 \end_layout
 
 \begin_layout Section
@@ -260,15 +269,18 @@ Convocação
 \end_layout
 
 \begin_layout Itemize
-[ ] Projeto da UENF [ ] Projeto do CCT [ ] Projeto do LENEP : nome do professor
+[ ] Projeto da UENF [ ] Projeto do CCT [ ] Projeto do LENEP :
+ nome do professor
 \end_layout
 
 \begin_layout Itemize
-[ ] Projeto de extenção: nome da empresa de engenharia 
+[ ] Projeto de extensão:
+ nome da empresa de engenharia 
 \end_layout
 
 \begin_layout Section
-Atendimento obrigação? 
+Atendimento obrigação?
+ 
 \end_layout
 
 \begin_layout Itemize
@@ -276,9 +288,9 @@ Atendimento obrigação?
 \end_layout
 
 \begin_layout Itemize
-[ ] sim disciplinas programação: Introdução ao Projeto de Engenharia, Programaçã
-o Orientada a Objeto em C++ e Projeto de Software Aplicado à Engenharia
- (antiga programação prática).
+[ ] sim disciplinas modelagem computacional:
+ Introdução ao Projeto de Engenharia,
+ Programação Orientada a Objeto em C++ e Projeto de Software Aplicado à Engenharia (antiga programação prática).
 \end_layout
 
 \begin_layout Itemize
@@ -290,7 +302,8 @@ o Orientada a Objeto em C++ e Projeto de Software Aplicado à Engenharia
 \end_layout
 
 \begin_layout Section
-Área, tema e sub-tema 
+Área,
+ tema e sub-tema 
 \end_layout
 
 \begin_layout Itemize
@@ -300,9 +313,19 @@ Título da área do conhecimento.
 
 \begin_deeper
 \begin_layout Description
-Dica: Ver áreas do conhecimento no site do CNPq ou no diretório MaterialAuxiliar
-, arquivo TabelaAreasConhecimento-Assuntos.dat.
- Pode envolver várias áreas do conhecimento.
+Dica:
+ Ver áreas do conhecimento no 
+\begin_inset CommandInset href
+LatexCommand href
+name "site do CNPq"
+target "https://lattes.cnpq.br/web/dgp/arvore-do-conhecimento"
+literal "false"
+
+\end_inset
+
+ ou no arquivo TabelaAreasConhecimento-Assuntos.dat.
+ O projeto pode envolver várias áreas do conhecimento,
+ mas deve ter como foco principal as áreas de engenharia e modelagem computacional.
 \end_layout
 
 \end_deeper
@@ -358,7 +381,8 @@ Coloque aqui uma breve descrição do desafio tecnológico.
 \end_layout
 
 \begin_layout Itemize
-Se necessário adicionar imagens e tabelas, referenciar artigos e livros,
+Se necessário adicionar imagens e tabelas,
+ referenciar artigos e livros,
  pode adicionar links para imagens e documentos externos.
 \end_layout
 
@@ -370,22 +394,13 @@ Objetivo geral
 \begin_layout Itemize
 Breve descrição do objetivo.
  
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-foco no problema de engenharia e não na solução
-\end_layout
-
-\end_inset
-
-
 \end_layout
 
 \begin_deeper
 \begin_layout Description
-Nota: para as disciplina de modelagem computacional relacionar com modelos
- computacionais associados.
+Nota:
+ Foco no problema de engenharia e não na solução.
+ Para as disciplina de modelagem computacional relacionar com modelos computacionais associados.
 \end_layout
 
 \end_deeper
@@ -394,66 +409,64 @@ Solução esperada - Tipo
 \end_layout
 
 \begin_layout Itemize
-Tipo do produto final, exemplo um software, um equipamento, uma metodologia.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-foco na solução a ser desenvolvida
-\end_layout
-
-\end_inset
-
-
+Tipo do produto final,
+ exemplo um software,
+ um equipamento,
+ uma metodologia.
 \end_layout
 
 \begin_deeper
 \begin_layout Description
-Nota: para as disciplina de modelagem computacional o produto é sempre um
- software ou algoritmo.
+Nota:
+ Foco na solução a ser desenvolvida.
+ Para as disciplina de modelagem computacional o produto é sempre um software ou algoritmo.
 \end_layout
 
 \end_deeper
 \begin_layout Section
-Solução esperada - Descrição 
+Solução esperada - Descrição
 \end_layout
 
 \begin_layout Itemize
 Breve descrição do tipo de solução esperada.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-descrever o tipo de solução; é um modelo matemático; é um algoritmo; é uma
- biblioteca computacional ; é um software didático; é um software de engenharia;
 \end_layout
 
-\end_inset
-
-
+\begin_deeper
+\begin_layout Itemize
+Exemplo:
+ descrever o tipo de solução;
+ é um modelo matemático?
+ é um algoritmo?
+ é uma biblioteca computacional?
+ é um software didático?
+ é um software de engenharia?
 \end_layout
 
+\end_deeper
 \begin_layout Itemize
 Descreva o produto final esperado.
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-o que é o produto final; o que ele faz; foco na solução a ser desenvovida
- e não no problema de engenharia
 \end_layout
 
-\end_inset
-
-
+\begin_deeper
+\begin_layout Itemize
+Exemplo:
+ o que é o produto final;
+ o que ele faz;
+ foco na solução a ser desenvolvida e não no problema de engenharia.
 \end_layout
 
+\end_deeper
 \begin_layout Section
 TRL pretendido 
 \end_layout
 
 \begin_layout Itemize
-Veja conceito de TRL e material da disciplina 
+TRL = 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Veja o conceito de TRL e material da disciplina 
 \begin_inset CommandInset href
 LatexCommand href
 name "Introdução ao Projeto de Engenharia"
@@ -465,12 +478,18 @@ literal "false"
 .
 \end_layout
 
+\end_deeper
 \begin_layout Section
 CRL pretendido
 \end_layout
 
 \begin_layout Itemize
-Veja conceito de CRL e material da disciplina 
+CRL = 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Veja o conceito de CRL e material da disciplina 
 \begin_inset CommandInset href
 LatexCommand href
 name "Introdução ao Projeto de Engenharia"
@@ -482,13 +501,13 @@ literal "false"
 .
 \end_layout
 
+\end_deeper
 \begin_layout Section
 Informações básicas complementares
 \end_layout
 
 \begin_layout Itemize
-Coloque aqui um conjunto de informações que podem ajudar no entendimento
- do escopo do problema científico/tecnológico e do produto desejado.
+Coloque aqui um conjunto de informações que podem ajudar no entendimento do escopo do problema científico/tecnológico e do produto desejado.
 \end_layout
 
 \begin_layout Itemize
@@ -497,19 +516,29 @@ Pode incluir links para material externo e referências bibliográficas.
 
 \begin_deeper
 \begin_layout Description
-Nota: No modelo disponibilizado no github temos dois diretórios para armazenar
- informações complementares.
+Nota:
+ No modelo disponibilizado no 
+\begin_inset CommandInset href
+LatexCommand href
+name "github"
+target "https://github.com/ldsc/LDSC-ProjetoEngenharia-2-Software-TituloProjeto-ModeloCompleto"
+literal "false"
+
+\end_inset
+
+ temos dois diretórios para armazenar informações complementares.
  
 \end_layout
 
 \begin_deeper
 \begin_layout Description
-MaterialAuxiliar: Material auxiliar ao projeto desenvolvido internamente.
+MaterialAuxiliar:
+ Material auxiliar ao projeto desenvolvido internamente.
 \end_layout
 
 \begin_layout Description
-MaterialExterno: Material auxiliar ao projeto desenvolvido por terceiros
- (adicionar lista de referências na bibliografia e citar autores).
+MaterialExterno:
+ Material auxiliar ao projeto desenvolvido por terceiros (adicionar lista de referências na bibliografia e citar autores).
 \end_layout
 
 \end_deeper
@@ -524,8 +553,7 @@ Varia de 18 a 36 meses.
 
 \begin_deeper
 \begin_layout Itemize
-O projeto de software é desenvolvido ao longo do 5/6/7 e eventualmente 8
- períodos do curso.
+O projeto de software é desenvolvido ao longo do 5/6 e 8 períodos do curso.
  Veja 
 \begin_inset CommandInset href
 LatexCommand href
@@ -539,21 +567,22 @@ literal "false"
 \end_layout
 
 \begin_layout Itemize
-Se o projeto for extendido pode se transformar no TCC na forma de projeto
- de engenharia, nestes casos prever 6-12 meses a mais.
+Se o projeto for estendido pode se transformar no TCC na forma de projeto de engenharia,
+ nestes casos prever 6-12 meses a mais.
 \end_layout
 
 \begin_layout Description
-Nota: Note que é um projeto de longo prazo e que requer muita dedicação
- ao longo de todos os semestres envolvidos, não deixe para depois imaginando
- que terá condições de fazer "rápido¨, projetos de engenharia por definição
- são demorados.
+Nota:
+ Note que é um projeto de longo prazo e que requer muita dedicação ao longo de todos os semestres envolvidos,
+ não deixe para depois imaginando que terá condições de fazer "rápido¨,
+ projetos de engenharia por definição são demorados.
  
 \end_layout
 
 \begin_layout Description
-Nota: Os modelos de software a serem desenvolvidos utilzam o paradigma da
- orientação a objetos, 
+Nota:
+ Os modelos de software a serem desenvolvidos utilizam o paradigma da orientação a objetos,
+ 
 \begin_inset CommandInset citation
 LatexCommand cite
 key "prog-UML-blaha,prog-UML-Rumbaugh,adb-prog-livroCpp"
@@ -561,7 +590,8 @@ literal "false"
 
 \end_inset
 
-.
+,
+ e a linguagem de programação C++ em função do baixo consumo de memória e alto desempenho.
 \end_layout
 
 \end_deeper
